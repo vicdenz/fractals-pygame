@@ -53,3 +53,6 @@ class complexNumber:
         else:
             oper = "-" if self.i < 0 else "+"
             return f"{self.r} {oper} {abs(self.i)}i"
+    
+    def __repr__(self):
+        return f"{self.r},{self.i}"
